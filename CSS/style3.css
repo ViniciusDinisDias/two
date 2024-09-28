@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    animation: mudarFundo 5s infinite;
+
+}
+img {
+    width: 400px; /* Defina a largura desejada */
+    height: 420px; /* Defina a altura desejada */
+    margin-left: 100px;
+    max-width: 100%;
+}
+.animacao-texto {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    animation: piscar 1s infinite, fogos 2s infinite;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+@keyframes fogos {
+    0% { text-shadow: 0 0 5px white; }
+    50% { text-shadow: 0 0 10px red, 0 0 20px yellow; }
+    100% { text-shadow: 0 0 5px white; }
+}
+.animacao-texto1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    animation: piscar 10s infinite, fogos 2s infinite;
+}
+@keyframes mudarFundo {
+    0% { background-color: #ff7e5f; }
+    50% { background-color: #feb47b; }
+    100% { background-color: #ff7e5f; }
+}
